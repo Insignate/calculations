@@ -8,7 +8,7 @@ const solve = (e) => {
   const parsedValue = parseInt(e.target.value)
   let calculatedValue = 0
   if (!isNaN(parsedValue)){
-    calculatedValue = ((6.51*parsedValue)/8)
+    calculatedValue = Math.ceil((6.51*parsedValue)/8)
   }
   caulculation.innerText = calculatedValue
 }
