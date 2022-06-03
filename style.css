@@ -4,11 +4,81 @@
 
 body{
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
-body > div{
+.logo{
+  margin: auto;
+  margin-bottom: 8px;
+}
+
+.window{
   margin: auto;
   display: inline-block;
   border: solid 3px gray;
   border-radius: 8px;
   padding: 6px;
+}
+
+.st0 {
+  fill: #0C0C0C;
+}
+
+.st1 {
+  fill: #F5B802;
+}
+
+.st2 {
+  fill: #FFFFFF;
+  stroke: #0C0C0C;
+  stroke-width: 2;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+
+#full-crown{
+  animation: animate-crown 3s forwards;
+}
+
+#full-name{
+  animation: animate-name 3s forwards ;
+}
+
+
+@keyframes animate-name{
+  0%{
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  10%{
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  43%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+}
+@keyframes animate-crown{
+  0%{
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  30%{
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  63%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
